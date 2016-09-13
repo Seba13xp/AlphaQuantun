@@ -1,3 +1,6 @@
+These are instruction on how to run the website with browser-sync I do not take credit for this.
+
+
 jekyll-gulp-sass-browser-sync
 =============================
 
