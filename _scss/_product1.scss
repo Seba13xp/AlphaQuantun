@@ -1,0 +1,126 @@
+body {
+    font-family: arial;
+}
+
+table {
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+    top: -45px;
+    box-shadow: 2px 2px 5px dimgray;
+    
+}
+
+table,
+tr,
+td {
+    border-collapse: collapse;
+    padding: 18px;
+    text-align: left;
+}
+
+caption.informationHeader {
+    position: relative;
+    top: -10px;
+    text-align: left;
+    font-size: 2.1em;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    color: #2a4857;
+    letter-spacing: .2vw;
+    font-family: "gadugi";
+    text-shadow: 1px 1px 2px #4d7e80;
+}
+
+tr:nth-child(odd) {
+    background-color: #c9c9c9;
+}
+
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+.productImageRight {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+.productImageLeft {
+    float: left;
+    margin: 0 0 10px 10px;
+}
+
+.productPageIntro {
+    margin-top: 8px;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-family: tahoma;
+}
+
+.specificationsWrapper {
+    pointer-events: none;
+}
+
+.priceTag {
+    width: 250px;
+    float: right;
+    text-align: center;
+    text-shadow: 1px 0px 4px black;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: tahoma;
+    font-size: 1.15em;
+    color: white;
+    margin: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    /*            border: 2px solid #a7c3d1;*/
+    border-radius: 5px;
+    padding: 3px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /* For browsers that do not support gradients */
+    background-color: steelblue;
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(steelblue, #325d81);
+    /* For Opera 11.1 to 12.0 */
+    background: -o-linear-gradient(steelblue, #325d81);
+    /* For Firefox 3.6 to 15 */
+    background: -moz-linear-gradient(steelblue, #325d81);
+    /* Standard syntax */
+    background: linear-gradient(steelblue, #325d81);
+    box-shadow: 1px 1px 3px dimgray;
+}
+
+.priceTag:hover {
+    /* For browsers that do not support gradients */
+    background-color: darkseagreen;
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(darkseagreen, #afcfaf);
+    /* For Opera 11.1 to 12.0 */
+    background: -o-linear-gradient(darkseagreen, #afcfaf);
+    /* For Firefox 3.6 to 15 */
+    background: -moz-linear-gradient(darkseagreen, #afcfaf);
+    /* Standard syntax */
+    background: linear-gradient(darkseagreen, #afcfaf);
+}
+
+@media screen and (max-width: 1020px) {
+    .productPageIntro {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .specificationsWrapper{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 40px;
+    }
+    .priceTag {
+        order: 1;
+    }
+}

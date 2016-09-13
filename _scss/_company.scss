@@ -1,0 +1,523 @@
+$titleBlue: rgb(42, 72, 87);
+$lineBlue:  rgb(167, 195, 209);
+
+div.compamy-wrapper{
+    width: 80%;
+    height: auto;
+//    background-color: bisque;
+//    border: 2px solid red;
+    margin: 0 auto;
+}
+
+.ourCompanyTitle{
+//    border: 4px solid red;
+    font-size: 50px;
+    font-family: "Gadugi";
+    color: rgb(42, 72, 87);
+    text-decoration: underline;
+    letter-spacing: .7vw;
+    text-shadow: 1px 1px 3px #4d7e80;
+//    /*    line-height: 1.2;*/
+}
+
+p.ourCompanyText{
+    font-size: 1.3em;
+    padding-top: 2vh;
+    padding-left: 50px;
+    padding-bottom: 6vh;
+    border-bottom: 2px solid rgb(167, 195, 209);
+}
+#theTeam-wrapper{
+//    background-color: beige;
+//    border: 4px solid red;
+    height: auto;
+
+}
+
+//#theTeam{
+//    border: 4px solid red;
+//    height: auto;
+//}
+
+#theTeamTitle{
+//    border: 4px solid red;
+    font-size: 36px;
+    font-family: "Gadugi";
+    color: rgb(42, 72, 87);
+    width: 165px;
+    margin-top: 65px;
+    float: left;
+    /*    line-height: 1.2;*/
+    /*    text-align: right;*/
+//    -moz-transform: scale(1.08, 1);
+//    -webkit-transform: scale(1.08, 1);
+//    -ms-transform: scale(1.08, 1);
+}
+
+#teamPh{
+//    border: 4px solid red;
+//    margin-top: 10px;
+    display: block;
+    margin-left: 380px;
+    padding-top: 130px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.Circle{
+//    border: 4px solid red;
+    border-radius: 50%;
+    background-color: rgb(149, 149, 149);
+    box-shadow: 2px 2px 4px dimgray;
+}
+
+
+
+#Circle1{
+    float: left;
+    margin-top: 65px;
+    margin-right: 10px;
+    width: 340px;
+    height: 340px;
+//    margin-right: 2vw;
+//    margin-top: 3%;
+    
+}
+
+#insperation-wrapper{
+//    border: 4px solid red;
+    height: auto;
+    margin-bottom: 30px;
+//    background-color: aqua;
+}
+
+//#insperation{
+//    border: 4px solid red;
+//}
+
+#insperationTitle{
+//    border: 4px solid red;
+    font-size: 36px;
+    font-family: "Gadugi";
+    color: rgb(42, 72, 87);
+    width: 178px;
+    margin-top: 65px;
+    float: left;
+    /*    line-height: 1.2;*/
+    /*    text-align: right;*/
+//    -moz-transform: scale(1.08, 1);
+//    -webkit-transform: scale(1.08, 1);
+//    -ms-transform: scale(1.08, 1);
+}
+
+#insperationPh{
+    display: block;
+    padding-top: 132px;
+    padding-left: 25px;
+//    margin-top: 145px;
+    margin-right: 380px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-decoration: none;
+}
+
+#Circle2{
+    float: right;
+    margin-top: 65px;
+    margin-left: 10px;
+    width: 340px;
+    height: 340px;
+//    margin-right: 2vw;
+    margin-bottom: 70px;
+    
+}
+
+//mobile nav
+
+@media screen and (max-width: 1020px) {
+    .ourCompanyTitle {
+//        border: 4px solid red;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Gadugi";
+        color: rgb(42, 72, 87);
+        text-decoration: underline;
+        letter-spacing: .7vw;
+//        line-height: 1.2;
+    }
+    
+    p.ourCompanyText {
+        font-size: 1em;
+        padding-top: 2vh;
+        padding-left: 20px;
+        padding-bottom: 6vh;
+        border-bottom: 2px solid rgb(167, 195, 209);
+    }
+    
+    #theTeam-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+     #Circle1{
+        float: none;
+         margin: 50px 0 0 0;
+//        vertical-align: middle;
+//        margin-top: 65px;
+//        margin-right: 10px;
+//        margin: 40px 35px;
+        width: 340px;
+        height: 340px;
+//        margin: 10% 0 0 25%;
+//         display: flex;
+//         flex-direction: column;
+    
+    }
+    
+    #theTeamTitle {
+        font-size: 28px;
+        font-family: "Gadugi";
+        color: rgb(42, 72, 87);
+        width: auto;
+//        margin: 10% 0 0 25%;
+//        padding-left: 16%;
+        float: none;
+    }
+    
+    #teamPh {
+//        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+//        margin-bottom: 5vh;
+        padding-top: 0px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: justify;
+//        text-transform: none;
+//        text-decoration: none;
+    
+    }
+    
+    #insperation-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #insperationTitle {
+//        border: 4px solid red;
+        font-size: 28px;
+        font-family: "Gadugi";
+        color: rgb(42, 72, 87);
+        width: auto;
+//        margin: 10% 0 0 25%;
+//        padding-left: 16%;
+        float: none;
+//        margin-top: 65px;
+//    float: left;
+    }
+    
+    #insperationPh {
+//        display: block;
+        padding-top: 0;
+        padding-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: justify;
+//    text-transform: none;
+//    text-decoration: none;
+    
+    }
+    
+    #Circle2{
+        float: none;
+        margin: 40px 0 0 0;
+        width: 340px;
+        height: 340px;
+//        margin-right: 2vw;
+//        margin-bottom: 70px;
+    
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    
+    #theTeamTitle {
+        font-size: 30px;
+        font-family: "Gadugi";
+        color: rgb(42, 72, 87);
+        width: auto;
+//        margin: 7vh 24.5vw 2vh;
+        float: none;
+    }
+    
+    #teamPh {
+//        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+//        margin-bottom: 5vh;
+        padding-top: 0px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: justify;
+//        text-transform: none;
+//        text-decoration: none;
+    
+    }
+    
+    #Circle1{
+        float: none;
+//        vertical-align: middle;
+//        margin-top: 65px;
+//        margin-right: 10px;
+//        margin: 40px 35px;
+        width: 225px;
+        height: 225px;
+//        margin: 20% 0 0 14vw;
+//        padding: 26% 10%;
+//        margin-left: auto;
+//        margin-right: auto;
+//        margin: 10vh 4vw 0;
+//        margin-top: 3%;
+    
+    }
+    
+    #insperationTitle {
+//        border: 4px solid red;
+//        margin: 2vh 25vw 2vh;
+        font-size: 25px;
+        font-family: "Gadugi";
+        color: rgb(42, 72, 87);
+        width: auto;
+//        margin-top: 65px;
+//    float: left;
+    }
+    
+    #insperationPh {
+//        display: block;
+        padding-top: 0;
+        padding-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: justify;
+//    text-transform: none;
+//    text-decoration: none;
+    
+    }
+    
+    #Circle2{
+        float: none;
+//        margin: 20% 0 0 14vw;
+        width: 225px;
+        height: 225px;
+//        margin-right: 2vw;
+//        margin-bottom: 70px;
+    
+    }
+    
+}
+
+@media screen and (max-width: 416px) {
+    
+    .Circle{
+//        border: 4px solid red;
+        border-radius: 50%;
+        background-color: rgb(149, 149, 149);
+//        width: 230px;
+//        height: 230px;
+    }
+
+
+
+    #Circle1{
+        float: none;
+//        margin: 5vh 10vw;
+        width: 225px;
+        height: 225px;
+
+
+    
+    }
+    
+    #theTeamTitle {
+        font-size: 25px;
+        font-family: "Gadugi";
+        color: rgb(42, 72, 87);
+        width: auto;
+//        margin: 7vh 23vw 2vh;
+        float: none;
+    }
+    
+    #teamPh {
+//        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5vh;
+        padding-top: 0;
+//        padding-top: 130px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: justify;
+//        text-transform: none;
+//        text-decoration: none;
+    
+    }
+    
+    #Circle2{
+        float: none;
+//        margin: 10vh 10vw 0;
+        width: 225px;
+        height: 225px;
+//        margin-right: 2vw;
+//        margin-bottom: 70px;
+    
+    }
+    
+    #insperationTitle {
+//        border: 4px solid red;
+//        margin: 7vh 25vw 2vh;
+        font-size: 25px;
+        font-family: "Gadugi";
+        color: rgb(42, 72, 87);
+        width: auto;
+//        margin-top: 65px;
+        float: none;
+    }
+    
+    #insperationPh {
+//        display: block;
+        padding-top: 0;
+        padding-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: justify;
+//    text-transform: none;
+//    text-decoration: none;
+    
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    
+    .Circle{
+//        border: 4px solid red;
+        border-radius: 50%;
+        background-color: rgb(149, 149, 149);
+//        width: 230px;
+//        height: 230px;
+    }
+
+
+
+    #Circle1{
+        float: none;
+//        margin: 50px 0 0 16px;
+        width: 225px;
+        height: 225px;
+
+
+    
+    }
+    
+    #theTeamTitle {
+        font-size: 25px;
+        font-family: "Gadugi";
+        color: rgb(42, 72, 87);
+        width: auto;
+//        margin: 7vh 23vw 0;
+//        float: left;
+    }
+    
+    #teamPh {
+//        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 5vh;
+        padding-top: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: justify;
+//        text-transform: none;
+//        text-decoration: none;
+    
+    }
+    
+    #Circle2{
+        float: none;
+//        margin: 10vh 4vw 0;
+        width: 225px;
+        height: 225px;
+//        margin-right: 2vw;
+//        margin-bottom: 70px;
+    
+    }
+    
+    #insperationTitle {
+//        border: 4px solid red;
+//        margin: 7vh 20.5vw 2vh;
+        font-size: 25px;
+        font-family: "Gadugi";
+        color: rgb(42, 72, 87);
+        width: auto;
+//        margin-top: 65px;
+//    float: left;
+    }
+    
+    #insperationPh {
+//        display: block;
+        padding-top: 0;
+        padding-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: justify;
+//    text-transform: none;
+//    text-decoration: none;
+    
+    }
+}
+
+

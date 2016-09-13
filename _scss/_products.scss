@@ -1,0 +1,110 @@
+body {
+    font-family: arial;
+    /*            background-color: #373e42;*/
+}
+
+.productsOverview {
+    font-family: tahoma;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-align: justify;
+    letter-spacing: 1px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#productImageOverview {
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: -15px;
+}
+
+.productImageHeader {
+    display: inline-block;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    vertical-align: top;
+}
+
+.productImageDescription {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.imageHeader {
+    -webkit-transition: 0.1s ease;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s ease;
+    -o-transition: 0.1s;
+    transition: 0.1s ease;
+    border-radius: 4px;
+    box-shadow: 0px 0px 7px dimgray;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: white;
+}
+
+.imageHeader:hover {
+    transform: scale(1.02);
+    /*            box-shadow: 0px 0px 15px #26a5e0;*/
+    box-shadow: 0px 0px 14px steelblue;
+}
+
+.productNameHeader {
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.productNameHeader a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 0px 4px black;
+    background-color: steelblue;
+    /* For browsers that do not support gradients */
+    background-color: steelblue;
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(steelblue, #325d81);
+    /* For Opera 11.1 to 12.0 */
+    background: -o-linear-gradient(steelblue, #325d81);
+    /* For Firefox 3.6 to 15 */
+    background: -moz-linear-gradient(steelblue, #325d81);
+    /* Standard syntax */
+    background: linear-gradient(steelblue, #325d81);
+    box-shadow: 1px 1px 3px dimgray;
+    padding: 9px;
+    border: 1px solid #0a1010;
+    border-radius: 5px;
+}
+
+.productNameHeader a:hover {
+    /* For browsers that do not support gradients */
+    background-color: darkseagreen;
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(darkseagreen, #afcfaf);
+    /* For Opera 11.1 to 12.0 */
+    background: -o-linear-gradient(darkseagreen, #afcfaf);
+    /* For Firefox 3.6 to 15 */
+    background: -moz-linear-gradient(darkseagreen, #afcfaf);
+    /* Standard syntax */
+    background: linear-gradient(darkseagreen, #afcfaf);
+    border: 1px solid #132013;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1020px) {
+    .productsOverview {
+        font-size: 15px;
+    }
+}

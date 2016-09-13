@@ -1,0 +1,1451 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+h1, h2 {
+  font-style: normal;
+  font-weight: normal; }
+
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+header {
+  height: 200px;
+  background-color: #1b6296;
+  background-image: url(/assets/Cicuet_image_left.png), url(/assets/Cicuet_image_right.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, right;
+  -webkit-box-shadow: 0px 2px 2px dimgray;
+          box-shadow: 0px 2px 2px dimgray; }
+
+nav {
+  width: 80%;
+  height: 61px;
+  background-color: #454545;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-shadow: 0px 5px 30px #000000;
+          box-shadow: 0px 5px 30px #000000; }
+  nav ul {
+    list-style: none; }
+  nav li {
+    padding: 15px 8px;
+    list-style: none; }
+    @media (min-width: 1020px) {
+      nav li {
+        float: left; } }
+    nav li:hover {
+      background-color: dimgray; }
+  nav a.links {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-family: "Gadugi"; }
+
+#logoWrapper {
+  margin-left: 10%; }
+
+#companyNameWapper {
+  float: left; }
+
+#companyName {
+  display: inline-block;
+  float: left;
+  font-family: "Gadugi";
+  font-size: 32px;
+  padding: 5px 5px 10px 5px;
+  color: white;
+  letter-spacing: .3vw;
+  text-decoration: none; }
+
+#imgLogo {
+  float: left;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px; }
+
+#welcomeTextTop {
+  font-size: 55px;
+  letter-spacing: .5vw;
+  font-family: "Gadugi";
+  color: #fefefe;
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 15px; }
+
+#welcomeTextSub {
+  font-family: "Gadugi";
+  font-size: 39px;
+  text-align: center;
+  color: white;
+  letter-spacing: .5vw; }
+
+@media screen and (max-width: 1020px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    background-color: #454545;
+    -webkit-transform: translateX(-200px);
+        -ms-transform: translateX(-200px);
+            transform: translateX(-200px); }
+  #nav-toggle {
+    display: block;
+    height: 60px;
+    width: 100%;
+    background-color: #454545;
+    position: fixed;
+    top: 0;
+    left: 0; }
+  .toggle-button {
+    cursor: pointer;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #454545;
+    padding-top: 9px; }
+  .toggle-line {
+    background-color: black;
+    width: 100%;
+    height: 7px;
+    margin-bottom: 10px; }
+  #wrapper {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+    overflow-x: hidden;
+    position: relative; }
+  #wrapper.open {
+    -webkit-transform: translateX(200px);
+        -ms-transform: translateX(200px);
+            transform: translateX(200px); }
+  #logoWrapper {
+    position: fixed;
+    top: 0;
+    left: 60px;
+    margin-left: 0; }
+  header {
+    height: 200px;
+    width: auto;
+    background-color: #1b6296;
+    background-image: url(/assets/Cicuet_image_right.png);
+    background-repeat: no-repeat;
+    background-position: right; }
+  #welcomeTextTop {
+    font-size: 30px;
+    letter-spacing: .5vw;
+    font-family: "Gadugi";
+    color: #fefefe;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 80px; }
+  #welcomeTextSub {
+    font-family: "Gadugi";
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    letter-spacing: .5vw; }
+  #companyName {
+    display: inline-block;
+    float: left;
+    font-family: "Gadugi";
+    font-size: 23px;
+    padding: 5px 5px 10px 5px;
+    color: white;
+    letter-spacing: .3vw;
+    text-decoration: none;
+    margin-top: 7px; } }
+
+nav li ul {
+  background-color: #454545;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -8px;
+  -webkit-box-shadow: 3px 5px 10px #000000;
+          box-shadow: 3px 5px 10px #000000;
+  width: inherit;
+  display: none; }
+
+nav ul li ul {
+  background-color: dimgray; }
+
+nav li:hover ul {
+  display: block; }
+
+nav li ul li {
+  display: block; }
+
+nav ul:hover {
+  display: block; }
+
+nav li ul li a.links {
+  line-height: 30px;
+  font-size: 17px;
+  padding: 5px; }
+
+nav li ul li a:hover {
+  background-color: darkseagreen; }
+
+div.compamy-wrapper {
+  width: 80%;
+  height: auto;
+  margin: 0 auto; }
+
+.ourCompanyTitle {
+  font-size: 50px;
+  font-family: "Gadugi";
+  color: #2a4857;
+  text-decoration: underline;
+  letter-spacing: .7vw;
+  text-shadow: 1px 1px 3px #4d7e80; }
+
+p.ourCompanyText {
+  font-size: 1.3em;
+  padding-top: 2vh;
+  padding-left: 50px;
+  padding-bottom: 6vh;
+  border-bottom: 2px solid #a7c3d1; }
+
+#theTeam-wrapper {
+  height: auto; }
+
+#theTeamTitle {
+  font-size: 36px;
+  font-family: "Gadugi";
+  color: #2a4857;
+  width: 165px;
+  margin-top: 65px;
+  float: left;
+  /*    line-height: 1.2;*/
+  /*    text-align: right;*/ }
+
+#teamPh {
+  display: block;
+  margin-left: 380px;
+  padding-top: 130px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-decoration: none; }
+
+.Circle {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #959595;
+  -webkit-box-shadow: 2px 2px 4px dimgray;
+          box-shadow: 2px 2px 4px dimgray; }
+
+#Circle1 {
+  float: left;
+  margin-top: 65px;
+  margin-right: 10px;
+  width: 340px;
+  height: 340px; }
+
+#insperation-wrapper {
+  height: auto;
+  margin-bottom: 30px; }
+
+#insperationTitle {
+  font-size: 36px;
+  font-family: "Gadugi";
+  color: #2a4857;
+  width: 178px;
+  margin-top: 65px;
+  float: left;
+  /*    line-height: 1.2;*/
+  /*    text-align: right;*/ }
+
+#insperationPh {
+  display: block;
+  padding-top: 132px;
+  padding-left: 25px;
+  margin-right: 380px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-decoration: none; }
+
+#Circle2 {
+  float: right;
+  margin-top: 65px;
+  margin-left: 10px;
+  width: 340px;
+  height: 340px;
+  margin-bottom: 70px; }
+
+@media screen and (max-width: 1020px) {
+  .ourCompanyTitle {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Gadugi";
+    color: #2a4857;
+    text-decoration: underline;
+    letter-spacing: .7vw; }
+  p.ourCompanyText {
+    font-size: 1em;
+    padding-top: 2vh;
+    padding-left: 20px;
+    padding-bottom: 6vh;
+    border-bottom: 2px solid #a7c3d1; }
+  #theTeam-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #Circle1 {
+    float: none;
+    margin: 50px 0 0 0;
+    width: 340px;
+    height: 340px; }
+  #theTeamTitle {
+    font-size: 28px;
+    font-family: "Gadugi";
+    color: #2a4857;
+    width: auto;
+    float: none; }
+  #teamPh {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: justify; }
+  #insperation-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #insperationTitle {
+    font-size: 28px;
+    font-family: "Gadugi";
+    color: #2a4857;
+    width: auto;
+    float: none; }
+  #insperationPh {
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: justify; }
+  #Circle2 {
+    float: none;
+    margin: 40px 0 0 0;
+    width: 340px;
+    height: 340px; } }
+
+@media screen and (max-width: 425px) {
+  #theTeamTitle {
+    font-size: 30px;
+    font-family: "Gadugi";
+    color: #2a4857;
+    width: auto;
+    float: none; }
+  #teamPh {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: justify; }
+  #Circle1 {
+    float: none;
+    width: 225px;
+    height: 225px; }
+  #insperationTitle {
+    font-size: 25px;
+    font-family: "Gadugi";
+    color: #2a4857;
+    width: auto; }
+  #insperationPh {
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: justify; }
+  #Circle2 {
+    float: none;
+    width: 225px;
+    height: 225px; } }
+
+@media screen and (max-width: 416px) {
+  .Circle {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #959595; }
+  #Circle1 {
+    float: none;
+    width: 225px;
+    height: 225px; }
+  #theTeamTitle {
+    font-size: 25px;
+    font-family: "Gadugi";
+    color: #2a4857;
+    width: auto;
+    float: none; }
+  #teamPh {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5vh;
+    padding-top: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: justify; }
+  #Circle2 {
+    float: none;
+    width: 225px;
+    height: 225px; }
+  #insperationTitle {
+    font-size: 25px;
+    font-family: "Gadugi";
+    color: #2a4857;
+    width: auto;
+    float: none; }
+  #insperationPh {
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: justify; } }
+
+@media screen and (max-width: 320px) {
+  .Circle {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #959595; }
+  #Circle1 {
+    float: none;
+    width: 225px;
+    height: 225px; }
+  #theTeamTitle {
+    font-size: 25px;
+    font-family: "Gadugi";
+    color: #2a4857;
+    width: auto; }
+  #teamPh {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5vh;
+    padding-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: justify; }
+  #Circle2 {
+    float: none;
+    width: 225px;
+    height: 225px; }
+  #insperationTitle {
+    font-size: 25px;
+    font-family: "Gadugi";
+    color: #2a4857;
+    width: auto; }
+  #insperationPh {
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: justify; } }
+
+footer {
+  height: 203px;
+  background-color: #1b6296;
+  background-image: url(/assets/Footer%20circet.png);
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 2px 2px dimgray;
+          box-shadow: 0px 2px 2px dimgray; }
+
+.social-media {
+  font-size: 20px;
+  color: white;
+  margin-left: 400px;
+  margin-bottom: 10px;
+  text-decoration: none; }
+
+#social {
+  text-decoration: none; }
+
+@media screen and (max-width: 1020px) {
+  footer {
+    background-image: none;
+    height: 170px; }
+  .social-media {
+    text-align: center;
+    margin-left: 0; } }
+
+div.technology-wrapper {
+  width: 80%;
+  height: auto;
+  margin: 0 auto; }
+
+#tech-prossesor {
+  margin-top: 30px; }
+
+#possesor {
+  float: left;
+  margin-right: 10px; }
+
+#prossesor-title {
+  float: left;
+  font-size: 35px;
+  font-family: "Gadugi";
+  color: #2a4857;
+  text-decoration: underline;
+  letter-spacing: .3vw;
+  /*    line-height: 1.2;*/
+  width: 450px; }
+
+#tech-pross-ph {
+  display: block;
+  margin-left: 160px;
+  padding-top: 130px;
+  margin-bottom: 170px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-decoration: none; }
+
+.Circle {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #959595; }
+
+#Circle-tech1 {
+  display: inline-block;
+  float: right;
+  margin-left: 10px;
+  width: 340px;
+  height: 340px; }
+
+#cooling {
+  float: left;
+  margin-right: 10px; }
+
+#cooling-title {
+  float: left;
+  font-size: 35px;
+  font-family: "Gadugi";
+  color: #2a4857;
+  text-decoration: underline;
+  letter-spacing: .3vw;
+  /*    line-height: 1.2;*/
+  width: 180px; }
+
+#Circle-tech2 {
+  display: inline-block;
+  float: left;
+  width: 340px;
+  height: 340px;
+  margin-right: 2vw; }
+
+#tech-cooling-ph {
+  display: block;
+  margin-left: 520px;
+  padding-top: 80px;
+  margin-bottom: 220px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-decoration: none; }
+
+@media screen and (max-width: 1020px) {
+  #tech-prossesor {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #possesor {
+    width: 100px;
+    height: 100px;
+    float: none;
+    margin: 0 0 0 0; }
+  #prossesor-title {
+    float: none;
+    font-size: 40px;
+    margin: 20px 0 0 0;
+    width: auto;
+    text-align: center; }
+  #Circle-tech1 {
+    width: 340px;
+    height: 340px;
+    float: none;
+    margin: 20px 0 0 0; }
+  #tech-pross-ph {
+    display: block;
+    margin: 40px 0 0 0;
+    padding: 0 0 0 0;
+    text-align: justify;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-decoration: none; }
+  #tech-cooling {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #cooling {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  #cooling-title {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  #Circle-tech2 {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
+  #tech-cooling-ph {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4; }
+  #cooling {
+    float: none;
+    margin: 50px 0 0 0;
+    padding: 0 0 0 0;
+    width: 100px;
+    height: 100px; }
+  #cooling-title {
+    float: none;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 0;
+    width: auto;
+    font-size: 40px; }
+  #Circle-tech2 {
+    margin: 40px 0 0 0;
+    padding: 0 0 0 0; }
+  #tech-cooling-ph {
+    display: block;
+    margin: 40px 0 40px 0;
+    padding: 0 0 0 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-decoration: none; } }
+
+@media screen and (max-width: 425px) {
+  #possesor {
+    width: 100px;
+    height: 100px;
+    float: none;
+    margin: 0 0 0 0; }
+  #prossesor-title {
+    float: none;
+    font-size: 30px;
+    margin: 20px 0 0 0;
+    width: auto;
+    text-align: center; }
+  #Circle-tech1 {
+    width: 300px;
+    height: 300px;
+    float: none;
+    margin: 20px 0 0 0; }
+  #tech-pross-ph {
+    display: block;
+    margin: 40px 0 0 0;
+    padding: 0 0 0 0;
+    text-align: justify;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-decoration: none; }
+  #cooling {
+    float: none;
+    margin: 50px 0 0 0;
+    padding: 0 0 0 0;
+    width: 100px;
+    height: 100px; }
+  #cooling-title {
+    float: none;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 0;
+    width: auto;
+    font-size: 30px; }
+  #Circle-tech2 {
+    margin: 40px 0 0 0;
+    padding: 0 0 0 0;
+    width: 300px;
+    height: 300px; }
+  #tech-cooling-ph {
+    display: block;
+    margin: 40px 0 40px 0;
+    padding: 0 0 0 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-decoration: none; } }
+
+@media screen and (max-width: 320px) {
+  #possesor {
+    width: 80px;
+    height: 80px;
+    float: none;
+    margin: 0 0 0 0; }
+  #prossesor-title {
+    float: none;
+    font-size: 25px;
+    margin: 20px 0 0 0;
+    width: auto;
+    text-align: center; }
+  #Circle-tech1 {
+    width: 200px;
+    height: 200px;
+    float: none;
+    margin: 20px 0 0 0; }
+  #tech-pross-ph {
+    display: block;
+    margin: 40px 0 0 0;
+    padding: 0 0 0 0;
+    text-align: justify;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-decoration: none; }
+  #cooling {
+    float: none;
+    margin: 50px 0 0 0;
+    padding: 0 0 0 0;
+    width: 80px;
+    height: 80px; }
+  #cooling-title {
+    float: none;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 0;
+    width: auto;
+    font-size: 25px; }
+  #Circle-tech2 {
+    margin: 40px 0 0 0;
+    padding: 0 0 0 0;
+    width: 200px;
+    height: 200px; }
+  #tech-cooling-ph {
+    display: block;
+    margin: 40px 0 40px 0;
+    padding: 0 0 0 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-decoration: none; } }
+
+body {
+  font-family: arial;
+  /*            background-color: #373e42;*/ }
+
+.productsOverview {
+  font-family: tahoma;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  text-align: justify;
+  letter-spacing: 1px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+#productImageOverview {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  top: -15px; }
+
+.productImageHeader {
+  display: inline-block;
+  width: 300px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  vertical-align: top; }
+
+.productImageDescription {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 10px;
+  padding-left: 6px;
+  padding-right: 6px; }
+
+.imageHeader {
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 7px dimgray;
+          box-shadow: 0px 0px 7px dimgray;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: white; }
+
+.imageHeader:hover {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+  /*            box-shadow: 0px 0px 15px #26a5e0;*/
+  -webkit-box-shadow: 0px 0px 14px steelblue;
+          box-shadow: 0px 0px 14px steelblue; }
+
+.productNameHeader {
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-bottom: 30px; }
+
+.productNameHeader a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 0px 4px black;
+  background-color: steelblue;
+  /* For browsers that do not support gradients */
+  background-color: steelblue;
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(steelblue, #325d81);
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  /* Standard syntax */
+  background: -webkit-gradient(linear, left top, left bottom, from(steelblue), to(#325d81));
+  background: linear-gradient(steelblue, #325d81);
+  -webkit-box-shadow: 1px 1px 3px dimgray;
+          box-shadow: 1px 1px 3px dimgray;
+  padding: 9px;
+  border: 1px solid #0a1010;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.productNameHeader a:hover {
+  /* For browsers that do not support gradients */
+  background-color: darkseagreen;
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(darkseagreen, #afcfaf);
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  /* Standard syntax */
+  background: -webkit-gradient(linear, left top, left bottom, from(darkseagreen), to(#afcfaf));
+  background: linear-gradient(darkseagreen, #afcfaf);
+  border: 1px solid #132013;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+@media screen and (max-width: 1020px) {
+  .productsOverview {
+    font-size: 15px; } }
+
+body {
+  font-family: arial; }
+
+table {
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+  top: -45px;
+  -webkit-box-shadow: 2px 2px 5px dimgray;
+          box-shadow: 2px 2px 5px dimgray; }
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  padding: 18px;
+  text-align: left; }
+
+caption.informationHeader {
+  position: relative;
+  top: -10px;
+  text-align: left;
+  font-size: 2.1em;
+  text-decoration: underline;
+  margin-bottom: 5px;
+  color: #2a4857;
+  letter-spacing: .2vw;
+  font-family: "gadugi";
+  text-shadow: 1px 1px 2px #4d7e80; }
+
+tr:nth-child(odd) {
+  background-color: #c9c9c9; }
+
+tr:nth-child(even) {
+  background-color: whitesmoke; }
+
+.productImageRight {
+  float: right;
+  margin: 0 0 10px 10px; }
+
+.productImageLeft {
+  float: left;
+  margin: 0 0 10px 10px; }
+
+.productPageIntro {
+  margin-top: 8px;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-family: tahoma; }
+
+.specificationsWrapper {
+  pointer-events: none; }
+
+.priceTag {
+  width: 250px;
+  float: right;
+  text-align: center;
+  text-shadow: 1px 0px 4px black;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: tahoma;
+  font-size: 1.15em;
+  color: white;
+  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  /*            border: 2px solid #a7c3d1;*/
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  /* For browsers that do not support gradients */
+  background-color: steelblue;
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(steelblue, #325d81);
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  /* Standard syntax */
+  background: -webkit-gradient(linear, left top, left bottom, from(steelblue), to(#325d81));
+  background: linear-gradient(steelblue, #325d81);
+  -webkit-box-shadow: 1px 1px 3px dimgray;
+          box-shadow: 1px 1px 3px dimgray; }
+
+.priceTag:hover {
+  /* For browsers that do not support gradients */
+  background-color: darkseagreen;
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(darkseagreen, #afcfaf);
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  /* Standard syntax */
+  background: -webkit-gradient(linear, left top, left bottom, from(darkseagreen), to(#afcfaf));
+  background: linear-gradient(darkseagreen, #afcfaf); }
+
+@media screen and (max-width: 1020px) {
+  .productPageIntro {
+    font-size: 15px; } }
+
+@media screen and (max-width: 425px) {
+  .specificationsWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    margin-top: 40px; }
+  .priceTag {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; } }
+
+#circle-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin: 40px 0 30px 0; }
+
+.circle {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #959595;
+  -webkit-box-shadow: 2px 2px 4px dimgray;
+          box-shadow: 2px 2px 4px dimgray; }
+
+.inner-circle {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #dddddd;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  position: absolute;
+  left: 125px;
+  top: 120px;
+  opacity: .6; }
+  .inner-circle:hover {
+    opacity: 1; }
+
+.inner-circle::after {
+  content: "+";
+  display: block;
+  color: white;
+  font-size: 4em;
+  position: absolute;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  height: 45px;
+  width: 45px;
+  top: 0;
+  left: -2px;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 100;
+  opacity: .9; }
+  .inner-circle::after:hover {
+    opacity: 1; }
+
+#circle1 {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  text-align: center;
+  font-size: 23px; }
+
+#circle2 {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  text-align: center;
+  font-size: 23px; }
+
+#circle3 {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  text-align: center;
+  font-size: 23px; }
+
+#textbox-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #ffffff; }
+
+#main-wrapper {
+  font-size: 20px;
+  text-align: justify;
+  padding: 40px 40px; }
+
+#main-title {
+  font-size: 1.4em;
+  text-decoration: underline;
+  letter-spacing: 0.4vw;
+  color: #2a4857; }
+
+#main-text {
+  font-size: 1.5em;
+  line-height: 1.3em; }
+
+#side-bar {
+  width: 350px;
+  height: auto;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 30px;
+  text-decoration: underline; }
+
+.article {
+  width: auto;
+  height: auto;
+  margin: 15px 10px 15px 10px; }
+
+.aside-images {
+  width: 300px;
+  height: 200px; }
+
+#side-title {
+  font-size: 1.5em;
+  padding-top: 10px; }
+
+#tech {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  height: 300px;
+  width: 300px; }
+
+#comp {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  height: 300px;
+  width: 300px; }
+
+#prod {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  height: 300px;
+  width: 300px; }
+
+@media screen and (max-width: 1020px) {
+  #circle-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 40px 0 30px 0; }
+  .circle {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #959595;
+    margin-bottom: 60px; }
+  .inner-circle {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #dddddd;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    position: absolute;
+    left: 125px;
+    top: 120px;
+    opacity: .6; }
+    .inner-circle:hover {
+      opacity: 1; }
+  #main-wrapper {
+    font-size: 15px;
+    text-align: justify;
+    padding: 40px 40px; } }
+
+@media screen and (max-width: 1020px) and (max-width: 614px) {
+  #textbox-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #ffffff; } }
+
+#contact {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px; }
+
+#placeOrder {
+  width: 55%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-family: tahoma;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 1px 1px 3px black; }
+
+.orderFieldset {
+  width: 100%;
+  margin: auto;
+  border: 2px groove dimgray;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  -webkit-box-shadow: 2px 2px 3px dimgray;
+          box-shadow: 2px 2px 3px dimgray;
+  background-color: #325d81;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(130deg, #396a93, #325d81, #32648C, #325d81, #4078a5);
+  /* For Safari 5.1 to 6.0 */
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: -webkit-linear-gradient(320deg, #396a93, #325d81, #32648C, #325d81, #4078a5);
+  background: linear-gradient(130deg, #396a93, #325d81, #32648C, #325d81, #4078a5); }
+
+.orderFieldset legend {
+  color: white;
+  border: 2px ridge dimgray;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 6px;
+  background-color: steelblue;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(steelblue, #325d81);
+  /* For Safari 5.1 to 6.0 */
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#325d81), to(steelblue));
+  background: -webkit-linear-gradient(#325d81, steelblue);
+  background: linear-gradient(#325d81, steelblue); }
+
+.orderFieldset input {
+  border: 1px ridge dimgray;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  font-size: 18px;
+  padding: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #f2f2f2; }
+
+.orderFieldset #total {
+  border: 2px outset #e6e6e6; }
+
+.orderFieldset select {
+  font-family: "tahoma";
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border: 3px double black;
+  padding: 5px; }
+
+.orderFieldset span {
+  letter-spacing: 3px;
+  font-size: 22px; }
+
+#placeOrder #orderSubmitButton {
+  font-size: 25px;
+  color: white;
+  background-color: steelblue;
+  border: 1px inset black;
+  -webkit-box-shadow: 1px 1px 5px black;
+          box-shadow: 1px 1px 5px black;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 3px;
+  /* For browsers that do not support gradients */
+  background-color: steelblue;
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(steelblue, #325d81);
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  /* Standard syntax */
+  background: -webkit-gradient(linear, left top, left bottom, from(steelblue), to(#325d81));
+  background: linear-gradient(steelblue, #325d81);
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+#placeOrder #orderSubmitButton:hover {
+  /* For browsers that do not support gradients */
+  background-color: darkseagreen;
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(darkseagreen, #afcfaf);
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  /* Standard syntax */
+  background: -webkit-gradient(linear, left top, left bottom, from(darkseagreen), to(#afcfaf));
+  background: linear-gradient(darkseagreen, #afcfaf); }
+
+#placeOrder #orderSubmitButton a {
+  color: white;
+  text-decoration: none; }
+
+.thankYouMessage {
+  text-align: center;
+  width: 45%;
+  height: 80%;
+  margin: auto;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  padding: 40px;
+  border: 2px groove dimgray;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 3px dimgray;
+          box-shadow: 2px 2px 3px dimgray;
+  font-family: tahoma;
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  background-color: #325d81;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(130deg, #396a93, #325d81, #32648C, #325d81, #4078a5);
+  /* For Safari 5.1 to 6.0 */
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: -webkit-linear-gradient(320deg, #396a93, #325d81, #32648C, #325d81, #4078a5);
+  background: linear-gradient(130deg, #396a93, #325d81, #32648C, #325d81, #4078a5); }
+
+.thankYouSubText {
+  font-size: .4em;
+  padding: 10px; }
+
+body {
+  width: auto;
+  height: auto;
+  background: white; }

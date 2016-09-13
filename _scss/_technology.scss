@@ -1,0 +1,396 @@
+div.technology-wrapper {
+    width: 80%;
+    height: auto;
+//    background-color: bisque;
+//    border: 2px solid red;
+    margin: 0 auto;
+}
+
+#tech-prossesor {
+    margin-top: 30px;
+    
+}
+
+#possesor {
+    float: left;
+    margin-right: 10px;
+//    border: 4px solid red;
+}
+
+#prossesor-title{
+    float: left;
+//    border: 4px solid red;
+    font-size: 35px;
+    font-family: "Gadugi";
+    color: rgb(42, 72, 87);
+    text-decoration: underline;
+    letter-spacing: .3vw;
+    /*    line-height: 1.2;*/
+    width: 450px;
+}
+
+#tech-pross-ph {
+//    width: 60%;
+//    
+////    display: block;
+//    margin-top: 130px;
+//    padding-left: 160px;
+//    border: 4px solid red;
+//    border-right: 2px solid rgb(167, 195, 209);
+    display: block;
+    margin-left: 160px;
+//    margin-right: 10px;
+    padding-top: 130px;
+    margin-bottom: 170px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.Circle{
+//    border: 4px solid red;
+    border-radius: 50%;
+    background-color: rgb(149, 149, 149);
+}
+
+
+
+#Circle-tech1 {
+    display: inline-block;
+    float: right;
+//    margin-top: 65px;
+    margin-left: 10px;
+    width: 340px;
+    height: 340px;
+//    margin-right: 2vw;
+//    margin-top: 3%;
+    
+}
+
+#tech-cooling {
+//    border: 2px solid red;
+}
+
+#cooling {
+    float: left;
+    margin-right: 10px;
+//    border: 4px solid red;
+}
+
+#cooling-title {
+    float: left;
+//    border: 4px solid red;
+    font-size: 35px;
+    font-family: "Gadugi";
+    color: rgb(42, 72, 87);
+    text-decoration: underline;
+    letter-spacing: .3vw;
+    /*    line-height: 1.2;*/
+    width: 180px;
+}
+
+#Circle-tech2 {
+    display: inline-block;
+    float: left;
+//    margin-top: 65px;
+//    margin-right: 10px;
+    width: 340px;
+    height: 340px;
+    margin-right: 2vw;
+//    margin-top: 3%;
+}
+
+#tech-cooling-ph {
+//    width: 60%;
+//    
+////    display: block;
+//    margin-top: 130px;
+//    padding-left: 160px;
+//    border: 4px solid red;
+//    border-right: 2px solid rgb(167, 195, 209);
+    display: block;
+    margin-left: 520px;;
+    padding-top: 80px;
+    margin-bottom: 220px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-decoration: none;
+}
+
+
+//mobile nav
+
+@media screen and (max-width: 1020px) {
+    #tech-prossesor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #possesor {
+        width: 100px;
+        height: 100px;
+        float: none;
+        margin: 0 0 0 0;
+    }
+    
+    #prossesor-title {
+        float: none;
+        font-size: 40px;
+        margin: 20px 0 0 0;
+        width: auto;
+        text-align: center;
+        
+    }
+    
+    #Circle-tech1 {
+        width: 340px;
+        height: 340px;
+        float: none;
+        margin: 20px 0 0 0;
+    }
+    
+    #tech-pross-ph {
+        display: block;
+        margin: 40px 0 0 0;
+        padding: 0 0 0 0;
+        text-align: justify;
+//    margin-left: 160px;
+//    margin-right: 10px;
+//    padding-top: 130px;
+//    margin-bottom: 170px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-decoration: none;
+    }
+    
+    #tech-cooling {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    #cooling{order: 1;}
+    #cooling-title{order: 2;}
+    #Circle-tech2{order: 3;}
+    #tech-cooling-ph{order: 4;}
+    
+    #cooling {
+        float: none;
+        margin: 50px 0 0 0;
+        padding: 0 0 0 0;
+        width: 100px;
+        height: 100px;
+        
+    }
+    
+    #cooling-title{
+        float: none;
+        margin: 20px 0 0 0;
+        padding: 0 0 0 0;
+        width: auto;
+        font-size: 40px;
+    }
+    
+    #Circle-tech2{
+        margin: 40px 0 0 0;
+        padding: 0 0 0 0;
+    }
+    
+    #tech-cooling-ph {
+        display: block;
+        margin: 40px 0 40px 0;
+        padding: 0 0 0 0;
+//        margin-left: 520px;;
+//        padding-top: 80px;
+//        margin-bottom: 220px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: normal;
+        line-height: normal;
+        text-transform: none;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+        
+    #possesor {
+        width: 100px;
+        height: 100px;
+        float: none;
+        margin: 0 0 0 0;
+    }
+    
+    #prossesor-title {
+        float: none;
+        font-size: 30px;
+        margin: 20px 0 0 0;
+        width: auto;
+        text-align: center;
+        
+    }
+    
+    #Circle-tech1 {
+        width: 300px;
+        height: 300px;
+        float: none;
+        margin: 20px 0 0 0;
+    }
+    
+    #tech-pross-ph {
+        display: block;
+        margin: 40px 0 0 0;
+        padding: 0 0 0 0;
+        text-align: justify;
+//    margin-left: 160px;
+//    margin-right: 10px;
+//    padding-top: 130px;
+//    margin-bottom: 170px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-decoration: none;
+    }
+    
+    #cooling {
+        float: none;
+        margin: 50px 0 0 0;
+        padding: 0 0 0 0;
+        width: 100px;
+        height: 100px;
+        
+    }
+    
+    #cooling-title{
+        float: none;
+        margin: 20px 0 0 0;
+        padding: 0 0 0 0;
+        width: auto;
+        font-size: 30px;
+    }
+    
+    #Circle-tech2{
+        margin: 40px 0 0 0;
+        padding: 0 0 0 0;
+        width: 300px;
+        height: 300px;
+    }
+    
+    #tech-cooling-ph {
+        display: block;
+        margin: 40px 0 40px 0;
+        padding: 0 0 0 0;
+//        margin-left: 520px;;
+//        padding-top: 80px;
+//        margin-bottom: 220px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        letter-spacing: normal;
+        line-height: normal;
+        text-transform: none;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #possesor {
+        width: 80px;
+        height: 80px;
+        float: none;
+        margin: 0 0 0 0;
+    }
+    
+    #prossesor-title {
+        float: none;
+        font-size: 25px;
+        margin: 20px 0 0 0;
+        width: auto;
+        text-align: center;
+        
+    }
+    
+    #Circle-tech1 {
+        width: 200px;
+        height: 200px;
+        float: none;
+        margin: 20px 0 0 0;
+    }
+    
+    #tech-pross-ph {
+        display: block;
+        margin: 40px 0 0 0;
+        padding: 0 0 0 0;
+        text-align: justify;
+//    margin-left: 160px;
+//    margin-right: 10px;
+//    padding-top: 130px;
+//    margin-bottom: 170px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-decoration: none;
+    }
+    
+    #cooling {
+        float: none;
+        margin: 50px 0 0 0;
+        padding: 0 0 0 0;
+        width: 80px;
+        height: 80px;
+        
+    }
+    
+    #cooling-title{
+        float: none;
+        margin: 20px 0 0 0;
+        padding: 0 0 0 0;
+        width: auto;
+        font-size: 25px;
+    }
+    
+    #Circle-tech2{
+        margin: 40px 0 0 0;
+        padding: 0 0 0 0;
+        width: 200px;
+        height: 200px;
+    }
+    
+    #tech-cooling-ph {
+        display: block;
+        margin: 40px 0 40px 0;
+        padding: 0 0 0 0;
+//        margin-left: 520px;;
+//        padding-top: 80px;
+//        margin-bottom: 220px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: normal;
+        line-height: normal;
+        text-transform: none;
+        text-decoration: none;
+    }
+    
+    
+}

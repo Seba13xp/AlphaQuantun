@@ -1,0 +1,250 @@
+header {
+    height: 200px;
+//    border: 2px solid red;
+    background-color: #1b6296;
+    background-image: url(/assets/Cicuet_image_left.png), url(/assets/Cicuet_image_right.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+//    width: 100%;
+    box-shadow: 0px 2px 2px dimgray;
+}
+
+nav {
+//    position: relative;
+    width: 80%;
+    height: 61px;
+    background-color: rgb(69, 69, 69);
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 0px 5px 30px #000000;
+    ul {
+        list-style: none;
+        //        text-align: left;
+        //        border: 2px solid red;
+    }
+    li {
+//        display: inline-block;
+//        float: left;
+        @media (min-width: 1020px) {
+        float: left;
+    }
+//        margin-top: 8px;
+        padding: 15px 8px;
+        list-style: none;
+        &:hover {
+            background-color: dimgray;
+        }
+    }
+    a.links {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        font-family: "Gadugi";
+//        padding-top: 4px;
+        //         &:hover{
+        //            background-color: dimgray;
+        //        }
+    }
+}
+
+#logoWrapper {
+    margin-left: 10%;
+}
+
+#companyNameWapper {
+    float: left;
+}
+
+#companyName {
+    display: inline-block;
+    float: left;
+    font-family: "Gadugi";
+    font-size: 32px;
+    padding: 5px 5px 10px 5px;
+    color: white;
+    letter-spacing: .3vw;
+    text-decoration: none;
+}
+
+#imgLogo {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#welcomeTextTop {
+    font-size: 55px;
+    letter-spacing: .5vw;
+    font-family: "Gadugi";
+    color: rgb(254, 254, 254);
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 1.2;
+    text-align: center;
+//    -moz-transform: scale(1.04, 1);
+//    -webkit-transform: scale(1.04, 1);
+//    -ms-transform: scale(1.04, 1);
+    margin-top: 15px;
+}
+
+#welcomeTextSub {
+    font-family: "Gadugi";
+    font-size: 39px;
+    text-align: center;
+    color: white;
+    letter-spacing: .5vw;
+}
+
+//moblie nav
+
+@media screen and (max-width: 1020px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        text-align: center;
+        background-color:  rgb(69, 69, 69);
+        transform: translateX(-200px);
+//        transform: translateY(0);
+//        box-shadow: 0px 0px 0px #000000;
+//        overflow-y: hidden;
+//        transition: transform 0.6s ease;
+    }
+    #nav-toggle {
+        display: block;
+        height: 60px;
+        width: 100%;
+        background-color: rgb(69, 69, 69);
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .toggle-button {
+        cursor: pointer;
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color:  rgb(69, 69, 69);
+        padding-top: 9px;
+    }
+    .toggle-line {
+        background-color: black;
+        width: 100%;
+        height: 7px;
+        margin-bottom: 10px;
+    }
+//    ul.open {
+//        transform: translateX(0);
+//        transition: transform 0.6s ease;
+//    }
+    #wrapper {
+        transform: translateX(0);
+        transition: transform 0.6s ease-in-out;
+        overflow-x: hidden;
+        position: relative;
+//        left: 0px;
+//        overflow-y: visible;
+//        z-index: 10;
+    }
+    
+    #wrapper.open {
+        transform: translateX(200px);
+    }
+    
+    #logoWrapper {
+        position: fixed;
+        top: 0;
+        left: 60px;
+        //        width: 100%;
+        //        background-color: rgb(69, 69, 69);
+        margin-left: 0;
+        //        padding-left: 10%;
+        //        width: 100%
+    }
+    
+    header {
+        height: 200px;
+        width: auto;
+//        border: 2px solid red;
+        background-color: #1b6296;
+        background-image: url(/assets/Cicuet_image_right.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    
+     #welcomeTextTop {
+         font-size: 30px;
+         letter-spacing: .5vw;
+         font-family: "Gadugi";
+         color: rgb(254, 254, 254);
+         font-weight: bold;
+         text-decoration: underline;
+         line-height: 1.2;
+         text-align: center;
+         //    -moz-transform: scale(1.04, 1);
+         //    -webkit-transform: scale(1.04, 1);
+         //    -ms-transform: scale(1.04, 1);
+         margin-top: 80px;
+    }
+    
+    #welcomeTextSub {
+        font-family: "Gadugi";
+        font-size: 25px;
+        text-align: center;
+        color: white;
+        letter-spacing: .5vw;
+    }
+    
+    #companyName {
+        display: inline-block;
+        float: left;
+        font-family: "Gadugi";
+        font-size: 23px;
+        padding: 5px 5px 10px 5px;
+        color: white;
+        letter-spacing: .3vw;
+        text-decoration: none;
+        margin-top: 7px;
+    }
+}
+
+//Colom nav drop down
+
+nav li ul {
+    background-color: #454545;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -8px;
+    box-shadow: 3px 5px 10px #000000;
+    width: inherit;
+    display: none;
+}
+
+nav ul li ul {
+    background-color: dimgray;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav li ul li {
+    display: block;
+}
+
+nav ul:hover {
+    display: block;
+}
+
+nav li ul li a.links {
+    line-height: 30px;
+    font-size: 17px;
+    padding: 5px;
+}
+
+nav li ul li a:hover {
+    background-color: darkseagreen;
+}
